@@ -10,5 +10,6 @@ use seguridad;
     contraseña VARCHAR(255) NOT NULL,
     fecha_registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
-INSERT INTO usuarios (nombre, apellido, email, contraseña) VALUES ('Admin', 'Root', 'admin@ejemplo.com', '12345');
+-- clave 12345
+INSERT INTO usuarios (nombre, apellido, email, contraseña) VALUES ('Admin', 'Root', 'admin@ejemplo.com', '$2b$10$Dqi5.LJvChYkr27RsXVob.mkxHxA/F.Aoij9CPGvqIrU0/8GKhxga');
 select * from usuarios;
